@@ -2,17 +2,17 @@ package com.alquiler.modelos;
 
 import com.alquiler.interfaces.Electrico;
 
-public class AutoElectrico extends Auto implements Electrico {
+public class CamionetaElectrica extends Camioneta implements Electrico {
     private int bateria = 100;
 
-    public AutoElectrico(String placa, String marca, String modelo, double km) {
+    public CamionetaElectrica(String placa, String marca, String modelo, double km) {
         super(placa, marca, modelo, km);
     }
 
     @Override
     public void recargarBateria() {
         bateria = 100;
-        System.out.println("Auto eléctrico recargado al 100%.");
+        System.out.println("Camioneta eléctrica recargada al 100%.");
     }
 
     @Override
@@ -22,6 +22,6 @@ public class AutoElectrico extends Auto implements Electrico {
 
     @Override
     public double costoBaseDia() {
-        return 60.0; // un poco más caro por ser eléctrico
+        return 90.0;
     }
 }
