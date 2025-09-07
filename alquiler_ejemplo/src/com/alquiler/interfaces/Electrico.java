@@ -1,5 +1,7 @@
 package com.alquiler.interfaces;
 
-public class Electrico {
+public interface Electrico {
+    void recargarBateria();
 
+    int nivelBateria();
 }

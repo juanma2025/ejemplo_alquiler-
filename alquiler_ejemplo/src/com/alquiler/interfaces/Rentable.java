@@ -1,5 +1,5 @@
 package com.alquiler.interfaces;
 
-public class Rentable {
-
+public interface Rentable {
+    double calcularCosto(int dias);
 }

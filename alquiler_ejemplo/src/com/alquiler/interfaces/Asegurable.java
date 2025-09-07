@@ -1,5 +1,5 @@
 package com.alquiler.interfaces;
 
-public class Asegurable {
-
+public interface Asegurable {
+    double calcularSeguro();
 }
